@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <addons>
+
 <addon
   id="plugin.video.SportsDevil"
   version="2017.02.29"
@@ -24,6 +26,7 @@
     <platform>all</platform>
   </extension>
 </addon>
+
 <addon id="script.module.urlresolver" name="URLResolver" version="5.0.41" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
@@ -46,4 +49,5 @@
         <website>https://www.tvaddons.co</website>
     </extension>
 </addon>
+
 </addons>
