@@ -1,18 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <addons>
-  <addon id="repository.Obliback" version="1.0.1" name="[B][COLOR white] Obliback [COLOR gold]Repository[/COLOR] [/B] " provider-name="megan">
-  <extension point="xbmc.addon.repository" name="Obliback Repository">
-    <info compressed="false">https://raw.githubusercontent.com/Neon1478/clsese/master/repositorio%20Obliback/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/Neon1478/clsese/master/repositorio%20Obliback/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/Neon1478/master/repositorio%20Obliback/</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">Repository</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-<addon id="plugin.video.SportsDevil"
+<addon
+  id="plugin.video.SportsDevil"
   version="2017.02.29"
   name="SportsDevil"
   provider-name="SportsDevil">
@@ -59,10 +47,3 @@
     </extension>
 </addon>
 </addons>
-
-
-
-
-
-
-
