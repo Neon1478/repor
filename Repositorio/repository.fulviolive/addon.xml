@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.fulviolive" version="1.0.1" name="[B][COLOR lime]• Fulvio[/COLOR] [COLOR white]LIVE[/COLOR] [COLOR red]Repository[/COLOR] [/B] " provider-name="Fulvio LIVE">
+	<extension point="xbmc.addon.repository" name="Fulvio LIVE Repository">
+		<info compressed="false">https://archive.org/download/Qsw2C8y93ifMTr0wO9P7/repo/addons.xml</info>
+		<checksum>https://archive.org/download/Qsw2C8y93ifMTr0wO9P7/repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://archive.org/download/Qsw2C8y93ifMTr0wO9P7/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Fulvio LIVE Repository</summary>
+		<description lang="en">Fulvio LIVE Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
