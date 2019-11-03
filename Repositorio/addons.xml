@@ -198,32 +198,31 @@
         <website>https://www.tvaddons.co</website>
     </extension>
 </addon>
-<addon id="plugin.video.Numko" name="Numko" version="2019.11.01" provider-name="Numko">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.parsedom" version="2.5.2"/>
-    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
-    <import addon="script.module.resolveurl" version="5.0.00"/>
+<addon id="plugin.video.Numko" name="Numko" version="1.0.1" provider-name="Numko">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.parsedom" version="2.5.2"/>
+		<import addon="script.module.inputstreamhelper" version="0.3.3"/>
+		<import addon="script.module.resolveurl" version="5.0.00"/>
         <import addon="script.module.streamlink.base" />
-        <import addon="repository.kodibae" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="maintv.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <description>[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
-    <disclaimer>There can only be one.</disclaimer>
-    <summary>Numko</summary>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website></website>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="maintv.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<description>[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+		<disclaimer>There can only be one.</disclaimer>
+		<summary>SportsDevil</summary>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<website></website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 </addons>
