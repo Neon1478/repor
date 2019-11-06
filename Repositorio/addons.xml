@@ -198,7 +198,7 @@
         <website>https://www.tvaddons.co</website>
     </extension>
 </addon>
-<addon id="plugin.video.Numko" name="Numko" version="1.0.1" provider-name="Numko">
+<addon id="plugin.video.Numko" name="Numko" version="2019.11.01" provider-name="Numko">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" />
@@ -206,6 +206,7 @@
 		<import addon="script.module.inputstreamhelper" version="0.3.3"/>
 		<import addon="script.module.resolveurl" version="5.0.00"/>
         <import addon="script.module.streamlink.base" />
+        <import addon="repository.kodibae" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="maintv.py">
 		<provides>video</provides>
@@ -213,7 +214,7 @@
 	<extension point="xbmc.addon.metadata">
 		<description>[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
 		<disclaimer>There can only be one.</disclaimer>
-		<summary>SportsDevil</summary>
+		<summary>Numko</summary>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -223,34 +224,6 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
-</addon>
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
-  <requires>
-      <import addon="xbmc.python" version="2.24.0"/>
-      <import addon="script.module.requests" version="2.12.4"/>
-      <import addon="script.module.futures" version="2.2.0"/>
-      <import addon="script.module.cryptolib" version="1.0.0"/>
-  </requires>
-   <extension point="xbmc.addon.repository" name="Mi repositorio">
-        <info>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio</datadir>
-   </extension>  
-  <extension point="xbmc.python.module" library="resources/lib/"/>
-  <extension point="xbmc.addon.metadata">
-      <summary>Streamlink Library for Kodi</summary>
-      <description>Streamlink Library for Kodi. It is a collection of plugins to help resolve web page urls into streamable links. Known issue: Does not work on Xbox, specifically throws exception when trying to import something from ctypes module.</description>
-      <platform>all</platform>
-      <license>Simplified BSD</license>
-      <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
-      <language>en</language>
-      <assets>
-          <icon>icon.png</icon>
-      </assets>
-      <news>+2019.06.23
-- Changed crypto module addon id
-- Updated description</news>
-  </extension>
 </addon>
 
 </addons>
