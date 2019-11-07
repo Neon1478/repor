@@ -1,31 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.Surfer"
-       name="[COLOR white]Surfer[/COLOR][COLOR cyan] #1[/COLOR]"
-       version="1.0.2"
-       provider-name="Megan">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>[COLOR cyan]IPTV[/COLOR]</summary>
-    <description>[COLOR cyan]IPTV and More[/COLOR]
- </description>
-    <platform>all</platform>
-  </extension>
+
+<addon id="repository.Mirepor" name="[COLOR lime]Mi Repositorio[/COLOR] Repo" version="1.0.2" provider-name="megan">
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Mi</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>
 <addon
   id="plugin.video.SportsDevil"
@@ -40,6 +27,11 @@
    <import addon="script.module.requests" />
    <import addon="script.module.livestreamer" />
   </requires>
+      <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio</datadir>
+    </extension>
   <extension 
     point="xbmc.python.pluginsource"
     library="default.py">
@@ -50,108 +42,6 @@
     <description>Play videos of different sports streaming sites</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
-  </extension>
-</addon>
-<addon id="plugin.video.videomediaset" name="Video Mediaset" provider-name="phate89, aracnoz" version="1.2.2">
-    <requires>
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="script.module.phate89" version="1.0.0"/>
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <language>it</language>
-        <platform>all</platform>
-        <summary lang="it">I programmi delle reti Mediaset</summary>
-        <description lang="it">Tutti i tuoi programmi preferiti sono disponibili per te il giorno dopo la messa in onda Tv. Ieri sera ti sei perso la tua fiction preferita? Nessun problema finalmente puoi rivederla comodamente su KODI ogni volta che vuoi.</description>
-        <summary lang="en">The broadcasts of Mediaset channels</summary>
-        <description lang="en">All your favorite shows are available to you the day after the airing Tv. Last night you missed your favorite TV drama? No problem, you can finally see her comfortably on KODI whenever you want.</description>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=292876</forum>
-		<source>https://github.com/phate89/plugin.video.videomediaset</source>
-        <news>v1.2.2
-- fixed the addon after website changes (thx to wizy)</news>
-    </extension>
-</addon>
-<addon id="program.plexus"
-       name="Plexus"
-       version="0.1.4"
-       provider-name="enen92, TV ADDONS">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-  
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
-    <description lang="pt">Plexus - Uma estrutura complexa constituÃÂ­da por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para vÃÂ¡rias plataformas.[CR][CR]DocumentaÃÂ§ÃÂ£o: (em falta)</description>
-    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores nÃÂ£o alojam nem distribuem nenhum do conteÃÂºdo que poderÃÂ¡ ser reproduzido a partir deste addon. Os autores nÃÂ£o tÃÂªm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fÃÂ³rum oficial do Kodi por favor respeite as regras do fÃÂ³rum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <forum>http://forums.tvaddons.ag</forum>
-    <platform>all</platform>
-  </extension>
-</addon>
-<addon id="repository.aresproject" name="[COLOR blue]A[/COLOR][COLOR white]res Project[/COLOR]" version="0.0.6" provider-name="Ares Team">
-	<extension point="xbmc.addon.repository" name="AresRepo">
-		<info compressed="false">http://repo.ares-project.com/plugins/addons.xml</info>
-		<checksum>http://repo.ares-project.com/plugins/addons.xml.md5</checksum>
-		<datadir zip="true">http://repo.ares-project.com/plugins/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>AresProject.</summary>
-		<description>Ares-Project Addons Source. Visit Us At https://ares-project.uk</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-<addon id="plugin.video.streamondemand"
-       name="Stream On Demand"
-       version="5.5.8"
-       provider-name="iSOD Crew">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="it">SOD Media</summary>
-        <description lang="it">SOD Media</description>
-        <summary lang="en">SOD Media</summary>
-        <description lang="en">SOD Media</description>
-        <platform>all</platform>
-        <license>GNU GPL v3</license>
-        <forum>http://www.mimediacenter.info/foro/viewforum.php?f=36</forum>
-        <source>https://github.com/streamondemand/plugin.video.streamondemand</source>
-    </extension>
-    <extension point="xbmc.service" library="library_service.py" start="login|startup">
-    </extension>
-</addon>
-<addon id="script.video.F4mProxy" 
-	     name="F4mProxy" 
-	     version="2.8.7" 
-	     provider-name="Shani">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-  </extension>
-
-
-    
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Proxy for f4m</summary>
-    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
 </addon>
 <addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
@@ -170,168 +60,170 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="plugin.video.footballreplays" name="Football Replays" version="1.3.0" provider-name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+<addon id="plugin.program.SMASHWizard" name="[COLOR gold][B]S[/B][/COLOR][COLOR indigo][B]M[/B][/COLOR][COLOR gold][B]A[/B][/COLOR][COLOR indigo][B]S[/B][/COLOR][COLOR gold][B]H[/B][/COLOR] [COLOR ghostwhite]Wizard[/COLOR]" version="1.2.8" provider-name="SMASH">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.urlresolver" version="0.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+    <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Football Replays</summary>
-    <description lang="en">Football Replays</description>
-    <disclaimer lang="en">By using This Plugin You will receive sometimes an advert which helps funds the developers developing.....we all thank you!!</disclaimer>
+    <summary lang="en">SMASH Wizard</summary>
+    <description lang="en">SMASH Wizard will allow you to Kodi/Install Build/Install Apkz And More</description>
     <platform>all</platform>
+  <news>Thanks To Aftermath For The Base Of The Wizard You Did A Great Job, I Have Made Some Great Changes And More To Come</news>
   </extension>
 </addon>
-<addon id="plugin.video.p2p-streams"
-       name="p2p-streams"
-       version="1.2.0b"
-       provider-name="enen92,fightnight">
+<addon id="script.video.F4mProxy" 
+       name="F4mProxy" 
+       version="2.8.7" 
+       provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+<addon id="plugin.program.Kill-Media-Center" version="9.0.0" name="[][COLOR line]•[/COLOR][COLOR green]Kill[/COLOR] [COLOR white]Media[/COLOR][COLOR red]Center[/COLOR] [COLOR line][/COLOR]•[]" provider-name="By @Who">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="Kill Media Center.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kill Media Center 31_01_2017</summary>
+    <description lang="en">Kill Media Center Immediate closure in 0 seconds and saving settings</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website>XXXXXXXXXXXXXXX</website>
+  </extension>
+</addon>
+<addon id="program.plexus"
+       name="Plexus"
+       version="0.1.8"
+       provider-name="tvaddons">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.pytz" />
     <import addon="script.module.requests" />
-    <import addon="script.module.mechanize" version="0.2.6"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream</summary>
-    <description lang="en">AceStream and Sopcast in your favourite media center! Watch peer-to-peer streams in Kodi without the need for external players. Project page: https://github.com/enen92/P2P-Streams-Kodi</description>
-    <description lang="pt">AceStream e Sopcast no seu Media-Center de eleição! Assista a streams peer-to-peer no Kodi sem a necessidade de players externos. Página do projecto: https://github.com/enen92/P2P-Streams-Kodi</description>
-    <description lang="nl">Acestream en Sopcast in jouw favoriete media center. Kijk peer-to-peer streams in Kodi zonder de noodzaak voor externe spelers. Project pagina: https://github.com/enen92/P2P-Streams-Kodi/</description>
-    <description lang="it">AceStream e SopCast nel tuo Media Center preferito! Guarda i canali peer-to-peer in Kodi senza la necessità di player esterni. Pagina del progetto: https://github.com/enen92/P2P-Streams-Kodi/</description>
-    <disclaimer lang="en">The authors does not host nor distribute any of the content you may watch using this addon. The authors have no affiliation with any of the content providers. This addon does not track its users.</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste addon. Os autores não têm qualquer afiliação com nenhum dos sites utilizados por este addon. O addon não contem nenhuma ferramenta de tracking.</disclaimer>
-    <disclaimer lang="nl">De auteurs houden of delen niets van de inhoud die u kunt bekijken met behulp van deze addon. De auteurs hebben geen banden met welke leverancier van inhoud dan ook. Deze addon houdt geen gegevens bij van zijn gebruikers.</disclaimer>
-    <disclaimer lang="it">L'autore non detiene o distribuisce alcun contenuto fruibile tramite l'utilizzo di questo addon. L'autore non è affiliato con nessun fornitore dei contenuti. Questo addon non traccia i suoi utenti.</disclaimer>
-    <forum>http://forum.kodi.tv/showthread.php?tid=201894</forum>
-    <source>https://github.com/enen92/P2P-Streams-Kodi | https://github.com/enen92/P2P-Streams-Kodi--Modules-</source>
-    <website>https://code.google.com/p/p2p-strm/</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.35" provider-name="tvaddons.ag, Eldorado">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-	</extension>
-</addon>
-<addon id="plugin.video.smytvshow"
-    name="sMyTv Show"
-    version="3.0.3"
-    provider-name="sMyTvShow">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.trakt" version="2.1.1~beta"/>
-    <import addon="script.module.myconnpy" version="1.1.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="it">Le serie tv in italiano</summary>
-    <description lang="it">Una libreria di serie tv in italiano recuperate dai siti web.</description>
-    <summary lang="en">Italian TV Shows</summary>
-    <description lang="en">Italian tv shows grabbed from web sites.</description>
-    <disclaimer lang="it">L'autore non ospita o distribuisce alcun filmato riproducibile da questo addon. L'autore non ha alcuna affiliazione con i provider dei contenuti. Mantenendo abilitata l'opzione di condivisione de "le mie serie" con la comunità, si accetta automaticamente che vengono inviate a sMyTvShow solo le informazioni inerenti alle associazioni fatte tra serie e canali, e la visione dei filmati, senza tracciare alcuna informazione personale. Se ritenete che ciò possa violare in qualche modo la vostra privacy, potete disabilitare tale opzione rinunciando alle funzionalità inerenti la comunità.</disclaimer>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider. Keeping enabled the last option in the main settings window, you accept that the information sent to sMyTvShow are the only ones related to the associations made between channels and tv shows and the views of the media item, without tracking any other personal information. If you believe that this information are a kind of privacy violation, you can disable this option; doing this you will not be able to use anymore any functionality connected to the community.</disclaimer>
-    <forum>http://www.smytvshow.info/forums/</forum>
-    <website>http://www.smytvshow.info/</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-<addon id="plugin.video.pelisalacarta"
-    name="pelisalacarta"
-    version="4.2.0~final"
-    provider-name="tvalacarta">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Películas y series a la carta</summary>
-    <description lang="es">Películas, series, documentales, anime, ... Todo está en Internet, y ahora en tu media center.</description>
-    <summary lang="en">Movies and TV Shows on demand</summary>
-    <description lang="en">Movies, Series, Documentaries, Anime, ... Everything is on the net, and now on your media center.</description>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum>http://www.mimediacenter.info/foro</forum>
-    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
-    <email>tvalacarta@gmail.com</email>
-    <source>https://github.com/tvalacarta/pelisalacarta</source>
-  </extension>
-  <extension point="xbmc.service" library="library_service.py" start="login|startup">
-  </extension>
-</addon>
-<addon id="script.areswizard" name="[COLOR black].[/COLOR] Ares Wizard" provider-name="AresTeam" version="0.0.60">
-<requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.six" version="1.9.0" optional="true"/>
-	<import addon="script.module.arrow" version="0.6.0" optional="true"/>
-	<import addon="script.module.requests" version="2.7.0" optional="true"/>
-  </requires>
- <extension library="default.py" point="xbmc.python.pluginsource">
- <provides>executable</provides>
- </extension>
- <extension point="xbmc.service" library="resources/service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Ares Wizard - Your one stop for Kodi setup + maintenance</summary>
-    <description lang="en">Ares Wizard</description>
-    <platform>all</platform>
-  </extension>
-  <extension point="kodi.context.item">
-	  <menu id="kodi.core.main">
-		<item library="resources/uploadlog.py">
-		  <label>Upload Kodi Log via Ares Project</label>
-		  <visible>true</visible>
-		</item>
-	  </menu>
-	</extension>
- </addon>
- <addon
-    id="plugin.program.chrome.launcher"
-    name="Chrome Launcher"
-    version="2.0.0"
-    provider-name="Richard (rwperkinsjr) Perkins">
-    <requires>
-        <import addon="xbmc.python"     version="2.24.0"/>
-        <import addon="xbmc.addon"      version="16.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
-    </extension>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary>SopCast and AceStream for Kodi</summary>
+    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
+    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
+    <description lang="es">Plexus - Una estructura compleja conteniendo una intrincada red de partes. Plexus añade soporte nativo peer-to-peer (AceStream y SopCast) al Centro de Entretenimiento Kodi para varias plataformas.[CR][CR]Documentacion: (falta)</description>
+  <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <platform>all</platform>
+  <forum>https://www.tvaddons.co/forums</forum>
+  <website>https://www.tvaddons.co</website>
+  </extension>
+</addon>
+<addon id="repository.fulviolive" version="1.0.1" name="[B][COLOR lime]• Fulvio[/COLOR] [COLOR white]LIVE[/COLOR] [COLOR red]Repository[/COLOR] [/B] " provider-name="Fulvio LIVE">
+  <extension point="xbmc.addon.repository" name="Fulvio LIVE Repository">
+    <info compressed="false">https://archive.org/download/Qsw2C8y93ifMTr0wO9P7/repo/addons.xml</info>
+    <checksum>https://archive.org/download/Qsw2C8y93ifMTr0wO9P7/repo/addons.xml.md5</checksum>
+    <datadir zip="true">https://archive.org/download/Qsw2C8y93ifMTr0wO9P7/repo/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fulvio LIVE Repository</summary>
+    <description lang="en">Fulvio LIVE Repository</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.34" provider-name="jsergio">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+      <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio</datadir>
+    </extension>	
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">Launch websites via Chrome in Kiosk-mode</summary>
-        <language></language>
-        <description lang="en">Launch websites via Chrome in Kiosk-mode</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <source>https://github.com/rwperkinsjr/plugin.program.chrome.launcher</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=170965</forum>
-        <website>https://www.google.com/chrome</website>
-        <email>rwperkinsjr at gmail.com</email>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
     </extension>
+</addon>
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.41" provider-name="tvaddons">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Neon1478/repor/master/Repositorio</datadir>
+    </extension>  
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
+</addon>
+<addon id="plugin.video.Numko" name="Numko" version="2019.11.01" provider-name="Numko">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.parsedom" version="2.5.2"/>
+		<import addon="script.module.inputstreamhelper" version="0.3.3"/>
+		<import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.streamlink.base" />
+        <import addon="repository.kodibae" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="maintv.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<description>[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+		<disclaimer>There can only be one.</disclaimer>
+		<summary>Numko</summary>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<website></website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 </addons>
