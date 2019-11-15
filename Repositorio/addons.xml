@@ -93,7 +93,7 @@
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
 </addon>
-<addon id="plugin.program.Kill-Media-Center" version="9.0.0" name="[][COLOR line]•[/COLOR][COLOR green]Kill[/COLOR] [COLOR white]Media[/COLOR][COLOR red]Center[/COLOR] [COLOR line][/COLOR]•[]" provider-name="By @Who">
+<addon id="plugin.program.Kill Media Center" version="9.0" name="[][COLOR line]•[/COLOR][COLOR green]Kill[/COLOR] [COLOR white]Media[/COLOR][COLOR red]Center[/COLOR] [COLOR line][/COLOR]•[]" provider-name="By @Who">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
