@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.program.Kill Media Center" version="9.0" name="[][COLOR line]•[/COLOR][COLOR green]Kill[/COLOR] [COLOR white]Media[/COLOR][COLOR red]Center[/COLOR] [COLOR line][/COLOR]•[]" provider-name="By @Who">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="Kill Media Center.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kill Media Center 31_01_2017</summary>
+    <description lang="en">Kill Media Center Immediate closure in 0 seconds and saving settings</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website>XXXXXXXXXXXXXXX</website>
+  </extension>
+</addon>
